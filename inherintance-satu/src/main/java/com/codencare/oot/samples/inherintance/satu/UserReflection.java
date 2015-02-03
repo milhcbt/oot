@@ -17,8 +17,8 @@ public class UserReflection {
     static Janji j;
     static{
         try {
-            //ada banyak pilihan class loader termasuk load dari url/file
-            // gunakan URLClassLoader
+            //ada banyak pilihan class loader termasuk load dari url/file/jar
+            //gunakan URLClassLoader contoh
             //File file = new File("c:\\myclasses\\");
             // Convert File to a URL
             //URL url = file.toURL();          // file:/c:/myclasses/
