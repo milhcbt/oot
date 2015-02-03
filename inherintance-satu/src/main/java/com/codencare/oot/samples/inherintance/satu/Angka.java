@@ -10,7 +10,7 @@ package com.codencare.oot.samples.inherintance.satu;
  *
  * @author iman (milh_cbt@yahoo.com)
  */
-public interface Janji {
+public interface Angka {
    String satu();
    String dua();    
 }

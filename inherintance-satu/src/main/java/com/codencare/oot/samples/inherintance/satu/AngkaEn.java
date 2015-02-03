@@ -10,16 +10,16 @@ package com.codencare.oot.samples.inherintance.satu;
  *
  * @author milh__000
  */
-public class KenyataanIni implements Janji{
+public class AngkaEn implements Angka{
 
     @Override
     public String satu() {
-        return "satu";
+        return "one";
     }
 
     @Override
     public String dua() {
-        return "dua";
+        return "two";
     }
     
 }

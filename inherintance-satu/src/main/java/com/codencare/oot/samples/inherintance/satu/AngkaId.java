@@ -10,10 +10,16 @@ package com.codencare.oot.samples.inherintance.satu;
  *
  * @author milh__000
  */
-public class User {
-    static Angka j = new AngkaId();
-    public static void main(String [] args){
-        System.out.println(j.satu());
-        System.out.println(j.dua());
+public class AngkaId implements Angka{
+
+    @Override
+    public String satu() {
+        return "satu";
     }
+
+    @Override
+    public String dua() {
+        return "dua";
+    }
+    
 }
