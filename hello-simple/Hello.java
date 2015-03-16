@@ -1,11 +1,12 @@
+
+import java.util.Set;
+import java.util.HashSet;
+
 /**
  class yang biasa pertama dibuat oleh programmer
  @author iman l hakim (milh_cbt@yahoo.com)
  
 */
-import java.util.Set;
-import java.util.HashSet;
-
 public class Hello{
 
 	/**
@@ -24,6 +25,7 @@ public class Hello{
 		System.out.println("== : " + (andi == x) );
 		System.out.println("hashcode andi:"+andi.hashCode());
 		System.out.println("hashcode x:"+x.hashCode());
+		for(Person p: peserta){System.out.println("peserta:\n"+p);}
 	}
 }
 class Person{
@@ -33,6 +35,7 @@ class Person{
     public int ID;
 	public String name;
 	
+	@Override
 	public boolean equals(Object o){
 	    if ((o instanceof Person)== false) return false;
 		Person other = (Person) o;
@@ -40,6 +43,11 @@ class Person{
 		if(this.ID == other.ID) return true;
 		return false;
 	}
+	@Override
 	public int hashCode(){return ID;}
+	@Override
+	public String toString(){
+		return "ID: "+ID+ "\n Nama: "+name;
+	}
 }
 
